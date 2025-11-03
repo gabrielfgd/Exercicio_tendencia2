@@ -1,0 +1,13 @@
+Este projeto contém um pipeline CI/CD seguro configurado no GitHub Actions.
+
+O pipeline possui dois nós (jobs):
+
+1. SAST (Static Application Security Testing):
+   - Usa a ferramenta Semgrep.
+   - Faz análise estática do código-fonte para detectar vulnerabilidades.
+
+2. DAST (Dynamic Application Security Testing):
+   - Usa a ferramenta OWASP ZAP.
+   - Executa testes dinâmicos simulando ataques em uma aplicação local.
+
+Os relatórios de cada etapa são armazenados como artefatos no GitHub Actions.
