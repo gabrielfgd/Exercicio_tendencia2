@@ -1,5 +1,10 @@
 name: Secure Pipeline CI/CD
 
+permissions:
+  contents: read
+  issues: write
+
+
 on:
   push:
     branches: [ "main" ]
